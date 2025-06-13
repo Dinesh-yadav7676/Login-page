@@ -1,0 +1,24 @@
+import React, { useState } from 'react';
+import Signup from './Signup';
+import Login from './Login';
+import MovieList from './MovieList';
+
+function App() {
+  let [isLoggedIn, setIsLoggedIn] = useState(false);
+  let [user, setUser] = useState(null);
+
+  return (
+    <div className="App">
+      {!isLoggedIn ? (
+        <>
+          <Signup/>
+          <Login setIsLoggedIn={setIsLoggedIn} setUser={setUser} />
+        </>
+      ) : (
+        {/* <MovieList user={user} /> */}
+      )}
+    </div>
+  );
+}
+
+export default App;
