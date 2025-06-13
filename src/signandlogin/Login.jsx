@@ -38,7 +38,7 @@ function Login({setLoggedIn,setUser}) {
        <form onSubmit={getdata}  className={login["login"]}>
       <h2>Login</h2>
       <div  className={login["lgn"]}>
-      <input type="text" name="name" placeholder="Name" onChange={getlogindata} value={logindata.name}  required />
+      <input type="text" name="name" placeholder="enter your name" onChange={getlogindata} value={logindata.name}  required />
       <br/>
       <input type="password" name="password" placeholder="Password" onChange={getlogindata}  value={logindata.password}  required />
       </div>

@@ -15,11 +15,13 @@ function App() {
     <Route path='/' element=
     {<Navigate to={"/signup"}/>}/>
       <Route path='/Signup' element={<Signup/>}/>
+      
+
       <Route path='/Login' element={<Login setLoggedIn={setLoggedIn} setUser={setUser}/>}/>
       <Route path='/omdbmovies' element={<Omdbmovies/>}/>
       <Route path='/moviedetails/:imdbID' element={<Moveidetails/>}/>
       
-    </Routes>F
+    </Routes>
       
     </BrowserRouter>
   )
